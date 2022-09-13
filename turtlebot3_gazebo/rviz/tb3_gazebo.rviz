@@ -49,7 +49,7 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
-        base_scan:
+        laser:
           Value: true
         camera_link:
           Value: true
@@ -78,7 +78,7 @@ Visualization Manager:
         odom:
           base_footprint:
             base_link:
-              base_scan:
+              laser:
                 {}
               camera_link:
                 camera_rgb_frame:
@@ -196,7 +196,7 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        base_scan:
+        laser:
           Alpha: 1
           Show Axes: false
           Show Trail: false

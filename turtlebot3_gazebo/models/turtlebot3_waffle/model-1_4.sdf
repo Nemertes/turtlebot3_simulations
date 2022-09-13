@@ -95,7 +95,7 @@
       </sensor>
     </link>
 
-    <link name="base_scan">    
+    <link name="laser">
       <inertial>
         <pose>-0.052 0 0.111 0 0 0</pose>
         <inertia>
@@ -160,7 +160,7 @@
             <remapping>~/out:=scan</remapping>
           </ros>
           <output_type>sensor_msgs/LaserScan</output_type>
-          <frame_name>base_scan</frame_name>
+          <frame_name>laser</frame_name>
         </plugin>
       </sensor>
     </link>
@@ -448,7 +448,7 @@
 
     <joint name="lidar_joint" type="fixed">
       <parent>base_link</parent>
-      <child>base_scan</child>
+      <child>laser</child>
       <pose>-0.064 0 0.121 0 0 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
